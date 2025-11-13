@@ -1,0 +1,399 @@
+<style>
+.lx-highlight { position: relative; border-radius:3px; padding:1px 2px;}
+.lx-highlight .lx-tooltip {
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+  background: #333;
+  color: #fff;
+  text-align: left;
+  border-radius: 4px;
+  padding: 6px 8px;
+  position: absolute;
+  z-index: 1000;
+  bottom: 125%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 12px;
+  max-width: 240px;
+  white-space: normal;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+}
+.lx-highlight:hover .lx-tooltip { visibility: visible; opacity:1; }
+.lx-animated-wrapper { max-width: 100%; font-family: Arial, sans-serif; }
+.lx-controls {
+  background: #fafafa; border: 1px solid #90caf9; border-radius: 8px;
+  padding: 12px; margin-bottom: 16px;
+}
+.lx-button-row {
+  display: flex; justify-content: center; gap: 8px; margin-bottom: 12px;
+}
+.lx-control-btn {
+  background: #4285f4; color: white; border: none; border-radius: 4px;
+  padding: 8px 16px; cursor: pointer; font-size: 13px; font-weight: 500;
+  transition: background-color 0.2s;
+}
+.lx-control-btn:hover { background: #3367d6; }
+.lx-progress-container {
+  margin-bottom: 8px;
+}
+.lx-progress-slider {
+  width: 100%; margin: 0; appearance: none; height: 6px;
+  background: #ddd; border-radius: 3px; outline: none;
+}
+.lx-progress-slider::-webkit-slider-thumb {
+  appearance: none; width: 18px; height: 18px; background: #4285f4;
+  border-radius: 50%; cursor: pointer;
+}
+.lx-progress-slider::-moz-range-thumb {
+  width: 18px; height: 18px; background: #4285f4; border-radius: 50%;
+  cursor: pointer; border: none;
+}
+.lx-status-text {
+  text-align: center; font-size: 12px; color: #666; margin-top: 4px;
+}
+.lx-text-window {
+  font-family: monospace; white-space: pre-wrap; border: 1px solid #90caf9;
+  padding: 12px; max-height: 260px; overflow-y: auto; margin-bottom: 12px;
+  line-height: 1.6;
+}
+.lx-attributes-panel {
+  background: #fafafa; border: 1px solid #90caf9; border-radius: 6px;
+  padding: 8px 10px; margin-top: 8px; font-size: 13px;
+}
+.lx-current-highlight {
+  border-bottom: 4px solid #ff4444;
+  font-weight: bold;
+  animation: lx-pulse 1s ease-in-out;
+}
+@keyframes lx-pulse {
+  0% { text-decoration-color: #ff4444; }
+  50% { text-decoration-color: #ff0000; }
+  100% { text-decoration-color: #ff4444; }
+}
+.lx-legend {
+  font-size: 12px; margin-bottom: 8px;
+  padding-bottom: 8px; border-bottom: 1px solid #e0e0e0;
+}
+.lx-label {
+  display: inline-block;
+  padding: 2px 4px;
+  border-radius: 3px;
+  margin-right: 4px;
+  color: #000;
+}
+.lx-attr-key {
+  font-weight: 600;
+  color: #1565c0;
+  letter-spacing: 0.3px;
+}
+.lx-attr-value {
+  font-weight: 400;
+  opacity: 0.85;
+  letter-spacing: 0.2px;
+}
+
+/* Add optimizations with larger fonts and better readability for GIFs */
+.lx-gif-optimized .lx-text-window { font-size: 16px; line-height: 1.8; }
+.lx-gif-optimized .lx-attributes-panel { font-size: 15px; }
+.lx-gif-optimized .lx-current-highlight { text-decoration-thickness: 4px; }
+</style>
+    <div class="lx-animated-wrapper lx-gif-optimized">
+      <div class="lx-attributes-panel">
+        <div class="lx-legend">Highlights Legend: <span class="lx-label" style="background-color:#D2E3FC;">audience_impact</span> <span class="lx-label" style="background-color:#C8E6C9;">opinion_statement</span></div>
+        <div id="attributesContainer"></div>
+      </div>
+      <div class="lx-text-window" id="textWindow">
+        **Page 1**
+&quot;&quot;&quot;
+Help
+Site Index
+IMDbPro
+Box Office Mojo
+License IMDb Data
+Press Room
+Advertising
+Jobs
+Conditions of Use
+Privacy Policy
+Your Ads Privacy Choices
+© 1990-2025 by IMDb.com, Inc.
+11 reviews
+Hide spoilers
+Ratings
+Sort by
+ruskiypotz
+Jan 4, 2020
+Permalink
+vecherskie
+Mar 14, 2021
+Permalink
+alexclk
+Dec 18, 2019
+Permalink
+mohamadjuliansyah
+Jan 10, 2021
+Permalink
+edcroatia
+Dec 15, 2019
+Permalink
+tonykaluga
+Dec 14, 2019
+Permalink
+danielmeench
+Dec 21, 2019
+Permalink
+sonekken
+Dec 25, 2020
+Permalink
+overs-1
+Jul 18, 2021
+Permalink
+phpnvcibmu
+Sep 9, 2021
+Permalink
+jamalahamadn
+Nov 15, 2023
+Permalink
+Review
+Show all
+Featured
+8/10
+<span class="lx-highlight lx-current-highlight" data-idx="0" style="background-color:#C8E6C9;">Great drama and movie</span>
+<span class="lx-highlight" data-idx="1" style="background-color:#C8E6C9;">Fantastic drama and acting</span>. <span class="lx-highlight" data-idx="2" style="background-color:#C8E6C9;">Story is solid through out the movie</span>. <span class="lx-highlight" data-idx="3" style="background-color:#C8E6C9;">Very interesting and captivating</span>.
+Helpful
+14
+11
+•
+7/10
+Russia miserable
+<span class="lx-highlight" data-idx="4" style="background-color:#C8E6C9;">A good insight on the hopeless state of Russian modern society</span>. <span class="lx-highlight" data-idx="5" style="background-color:#C8E6C9;">Integrity and good can be found only
+in interpersonal relations, not in social institutions which are totally corrupted</span>. <span class="lx-highlight" data-idx="6" style="background-color:#C8E6C9;">The movie is a little bit
+slow, but still catching</span>.
+Helpful
+3
+4
+•
+10/10
+Wow, the movie is <span class="lx-highlight" data-idx="7" style="background-color:#C8E6C9;">much better than I expected</span>
+I never read the book. Maybe that&#x27;s why I really enjoyed the movie. It&#x27;s <span class="lx-highlight" data-idx="8" style="background-color:#C8E6C9;">maybe the best Russian movie
+I saw in the last several years</span>.
+Helpful
+23
+13
+•
+9/10
+<span class="lx-highlight" data-idx="9" style="background-color:#C8E6C9;">Depressing movie</span>
+<span class="lx-highlight" data-idx="10" style="background-color:#D2E3FC;">Got me hooked and depressed at the same time</span>. Over all <span class="lx-highlight" data-idx="11" style="background-color:#C8E6C9;">it&#x27;s a good movie</span>.
+Helpful
+5
+1
+•
+1/10
+<span class="lx-highlight" data-idx="12" style="background-color:#C8E6C9;">Tolerating corruption</span>
+Spoiler
+Helpful
+18
+50
+•
+10/10
+Well done!
+<span class="lx-highlight" data-idx="13" style="background-color:#C8E6C9;">Well done guys u did a good work</span>. <span class="lx-highlight" data-idx="14" style="background-color:#C8E6C9;">At last i have no shame for movie from my country</span>. Thank you,
+<span class="lx-highlight" data-idx="15" style="background-color:#D2E3FC;">was watching in one breath</span>.
+Helpful
+20
+14
+•
+4/10
+The first two opening sequences are enough to watch to get a representation of
+<span class="lx-highlight" data-idx="16" style="background-color:#C8E6C9;">the mediocrity of a movie</span>.
+The first two opening sequences are enough to watch to get a representation of the mediocrity of a
+movie. <span class="lx-highlight" data-idx="17" style="background-color:#C8E6C9;">You can smell rotten fish from the first minutes</span>.
+<span class="lx-highlight" data-idx="18" style="background-color:#C8E6C9;">A leading actor Sasha Petrov is thirty years old and looks thirty-five, so when he is represented to us
+as a young student it is simply implausible</span>. &quot;A junkhead who deals drugs living with his mom&quot; that I
+would believe. And it&#x27;s just the start.
+The <span class="lx-highlight" data-idx="19" style="background-color:#C8E6C9;">lack of decent introduction of an antagonist</span> played by another nohow actor Ivan Yankovsky
+<span class="lx-highlight" data-idx="20" style="background-color:#C8E6C9;">leaves the same feeling of being tricked</span>. The whole &quot;night club sequence&quot; <span class="lx-highlight" data-idx="21" style="background-color:#C8E6C9;">looks both poorly acted
+and overplayed</span> (depends on what actor you are looking at). Yes, it may happen in an up to the neck
+Helpful
+16
+49
+•
+10/10
+<span class="lx-highlight" data-idx="22" style="background-color:#C8E6C9;">One if the best dramas</span>
+<span class="lx-highlight" data-idx="23" style="background-color:#C8E6C9;">An emotional film</span>, <span class="lx-highlight" data-idx="24" style="background-color:#C8E6C9;">a great character</span>.. <span class="lx-highlight" data-idx="25" style="background-color:#C8E6C9;">One of those rare rare movies you really want to see how it
+turns out for the boy</span>. Something Western cinematography cannot do anymore.
+Helpful
+6
+6
+•
+10/10
+<span class="lx-highlight" data-idx="26" style="background-color:#C8E6C9;">Great storytelling, cinematography and acting</span>
+Loved this movie as it <span class="lx-highlight" data-idx="27" style="background-color:#C8E6C9;">keeps you guessing how the movie would unfold at the end</span>. <span class="lx-highlight" data-idx="28" style="background-color:#C8E6C9;">The moral of the
+story and the plot unwinding from a simple beginning is superb</span>. <span class="lx-highlight" data-idx="29" style="background-color:#C8E6C9;">Well crafted and tense from
+beginning to end</span>. This is a movie to watch if you like Gone Baby Gone and Drive
+<span class="lx-highlight" data-idx="30" style="background-color:#C8E6C9;">Russian action movie at its best !</span>
+<span class="lx-highlight" data-idx="31" style="background-color:#D2E3FC;">Will keep you glued to your seats</span>.
+Helpful
+2
+1
+•
+9/10
+Intense, depressing and bleak, but amazing
+What an <span class="lx-highlight" data-idx="32" style="background-color:#C8E6C9;">amazing movie</span>. <span class="lx-highlight" data-idx="33" style="background-color:#C8E6C9;">Intense, bleak and very sad</span>. <span class="lx-highlight" data-idx="34" style="background-color:#C8E6C9;">Definitely not a movie for everyone</span>. <span class="lx-highlight" data-idx="35" style="background-color:#C8E6C9;">Leaves you
+thinking about a lot of things</span>
+9/10.
+Helpful
+1
+2
+•
+10/10
+<span class="lx-highlight" data-idx="36" style="background-color:#C8E6C9;">Very nice movie</span>
+<span class="lx-highlight" data-idx="37" style="background-color:#C8E6C9;">The storyline unfolds with a captivating blend of mystery and drama</span>, introducing us to a world filled
+with complex characters and unforeseen twists. Without divulging spoilers, the <span class="lx-highlight" data-idx="38" style="background-color:#C8E6C9;">movie&#x27;s plot
+masterfully weaves together various elements, creating a tapestry of suspense that <span class="lx-highlight" data-idx="39" style="background-color:#D2E3FC;">keeps the
+audience guessing until the final scenes</span></span>.
+The cast delivers <span class="lx-highlight" data-idx="40" style="background-color:#C8E6C9;">commendable performances</span>, breathing life into their respective roles. <span class="lx-highlight" data-idx="41" style="background-color:#C8E6C9;">Standout
+acting and on-screen chemistry contribute significantly to the movie&#x27;s success</span>. <span class="lx-highlight" data-idx="42" style="background-color:#C8E6C9;">Each character&#x27;s
+portrayal adds depth to the narrative, creating a compelling and immersive viewing experience</span>.
+The film&#x27;s visual allure is evident through its <span class="lx-highlight" data-idx="43" style="background-color:#C8E6C9;">impeccable cinematography and striking visual effects</span>.
+Helpful
+0
+0
+•
+More from this title
+More to explore
+Staff Picks: What to Watch in November
+See our picks
+Fantastical Physical Transformations
+See the full gallery
+User lists
+Related lists from IMDb users
+Create a list
+New Russian Expressionism
+created 3 years ago
+39 titles
+Best Russian films (1985 — ...)
+created 2 years ago
+21 titles
+2022
+created 3 years ago
+30 titles
+Neo Noir: Ex-Cons.
+created 3 years ago
+38 titles
+Regarder
+created 5 years ago
+24 titles
+Movie-russian
+created 5 years ago
+29 titles
+User polls
+Related polls from IMDb users
+Why Would You Avoid Voting in a Poll?
+How Many Options in a Poll Are Perfect?
+Must-Stream Sci-Fi on Paramount+
+See the full list
+Recently viewed
+Clear all
+Tekst
+⼀戰再戰
+⿊鏡
+Get the IMDb App
+Sign in for more access
+List
+Photos
+List
+Back
+Tekst
+User reviews
+All topics
+Sign in
+Use app
+Search IMDb
+All
+&quot;&quot;&quot;
+
+
+      </div>
+      <div class="lx-controls">
+        <div class="lx-button-row">
+          <button class="lx-control-btn" onclick="playPause()">▶️ Play</button>
+          <button class="lx-control-btn" onclick="prevExtraction()">⏮ Previous</button>
+          <button class="lx-control-btn" onclick="nextExtraction()">⏭ Next</button>
+        </div>
+        <div class="lx-progress-container">
+          <input type="range" id="progressSlider" class="lx-progress-slider"
+                 min="0" max="43" value="0"
+                 onchange="jumpToExtraction(this.value)">
+        </div>
+        <div class="lx-status-text">
+          Entity <span id="entityInfo">1/44</span> |
+          Pos <span id="posInfo">[634-655]</span>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      (function() {
+        const extractions = [{"index": 0, "class": "opinion_statement", "text": "Great drama and movie", "color": "#C8E6C9", "startPos": 634, "endPos": 655, "beforeText": " 25, 2020\nPermalink\novers-1\nJul 18, 2021\nPermalink\nphpnvcibmu\nSep 9, 2021\nPermalink\njamalahamadn\nNov 15, 2023\nPermalink\nReview\nShow all\nFeatured\n8/10\n", "extractionText": "Great drama and movie", "afterText": "\nFantastic drama and acting. Story is solid through out the movie. Very interesting and captivating.\nHelpful\n14\n11\n\u2022\n7/10\nRussia miserable\nA good insi", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">The movie</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Positive</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">Great drama and movie</span>}</div>"}, {"index": 1, "class": "opinion_statement", "text": "Fantastic drama and acting", "color": "#C8E6C9", "startPos": 656, "endPos": 682, "beforeText": "ers-1\nJul 18, 2021\nPermalink\nphpnvcibmu\nSep 9, 2021\nPermalink\njamalahamadn\nNov 15, 2023\nPermalink\nReview\nShow all\nFeatured\n8/10\nGreat drama and movie\n", "extractionText": "Fantastic drama and acting", "afterText": ". Story is solid through out the movie. Very interesting and captivating.\nHelpful\n14\n11\n\u2022\n7/10\nRussia miserable\nA good insight on the hopeless state o", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">The drama and acting</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Positive</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">Fantastic</span>}</div>"}, {"index": 2, "class": "opinion_statement", "text": "Story is solid through out the movie", "color": "#C8E6C9", "startPos": 684, "endPos": 720, "beforeText": "\nphpnvcibmu\nSep 9, 2021\nPermalink\njamalahamadn\nNov 15, 2023\nPermalink\nReview\nShow all\nFeatured\n8/10\nGreat drama and movie\nFantastic drama and acting. ", "extractionText": "Story is solid through out the movie", "afterText": ". Very interesting and captivating.\nHelpful\n14\n11\n\u2022\n7/10\nRussia miserable\nA good insight on the hopeless state of Russian modern society. Integrity an", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">The story</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Positive</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">solid</span>}</div>"}, {"index": 3, "class": "opinion_statement", "text": "Very interesting and captivating", "color": "#C8E6C9", "startPos": 722, "endPos": 754, "beforeText": "lahamadn\nNov 15, 2023\nPermalink\nReview\nShow all\nFeatured\n8/10\nGreat drama and movie\nFantastic drama and acting. Story is solid through out the movie. ", "extractionText": "Very interesting and captivating", "afterText": ".\nHelpful\n14\n11\n\u2022\n7/10\nRussia miserable\nA good insight on the hopeless state of Russian modern society. Integrity and good can be found only\nin interp", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">The movie</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Positive</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">Very interesting and captivating</span>}</div>"}, {"index": 4, "class": "opinion_statement", "text": "A good insight on the hopeless state of Russian modern society", "color": "#C8E6C9", "startPos": 794, "endPos": 856, "beforeText": "a and movie\nFantastic drama and acting. Story is solid through out the movie. Very interesting and captivating.\nHelpful\n14\n11\n\u2022\n7/10\nRussia miserable\n", "extractionText": "A good insight on the hopeless state of Russian modern society", "afterText": ". Integrity and good can be found only\nin interpersonal relations, not in social institutions which are totally corrupted. The movie is a little bit\ns", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">The movie</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Positive</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">good insight</span>}</div>"}, {"index": 5, "class": "opinion_statement", "text": "Integrity and good can be found only in interpersonal relations, not in social institutions which are totally corrupted", "color": "#C8E6C9", "startPos": 858, "endPos": 977, "beforeText": "ut the movie. Very interesting and captivating.\nHelpful\n14\n11\n\u2022\n7/10\nRussia miserable\nA good insight on the hopeless state of Russian modern society. ", "extractionText": "Integrity and good can be found only\nin interpersonal relations, not in social institutions which are totally corrupted", "afterText": ". The movie is a little bit\nslow, but still catching.\nHelpful\n3\n4\n\u2022\n10/10\nWow, the movie is much better than I expected\nI never read the book. Maybe t", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">Social institutions</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Negative</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">totally corrupted</span>}</div>"}, {"index": 6, "class": "opinion_statement", "text": "the movie is a little bit slow, but still catching", "color": "#C8E6C9", "startPos": 979, "endPos": 1029, "beforeText": "e of Russian modern society. Integrity and good can be found only\nin interpersonal relations, not in social institutions which are totally corrupted. ", "extractionText": "The movie is a little bit\nslow, but still catching", "afterText": ".\nHelpful\n3\n4\n\u2022\n10/10\nWow, the movie is much better than I expected\nI never read the book. Maybe that&#x27;s why I really enjoyed the movie. It&#x27;s maybe the", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">The movie</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Neutral</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">a little bit slow, but still catching</span>}</div>"}, {"index": 7, "class": "opinion_statement", "text": "much better than I expected", "color": "#C8E6C9", "startPos": 1069, "endPos": 1096, "beforeText": "ns, not in social institutions which are totally corrupted. The movie is a little bit\nslow, but still catching.\nHelpful\n3\n4\n\u2022\n10/10\nWow, the movie is ", "extractionText": "much better than I expected", "afterText": "\nI never read the book. Maybe that&#x27;s why I really enjoyed the movie. It&#x27;s maybe the best Russian movie\nI saw in the last several years.\nHelpful\n23\n13\n", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">The movie</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Positive</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">much better</span>}</div>"}, {"index": 8, "class": "opinion_statement", "text": "maybe the best Russian movie I saw in the last several years", "color": "#C8E6C9", "startPos": 1170, "endPos": 1230, "beforeText": " catching.\nHelpful\n3\n4\n\u2022\n10/10\nWow, the movie is much better than I expected\nI never read the book. Maybe that&#x27;s why I really enjoyed the movie. It&#x27;s ", "extractionText": "maybe the best Russian movie\nI saw in the last several years", "afterText": ".\nHelpful\n23\n13\n\u2022\n9/10\nDepressing movie\nGot me hooked and depressed at the same time. Over all it&#x27;s a good movie.\nHelpful\n5\n1\n\u2022\n1/10\nTolerating corrup", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">Russian movie</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Positive</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">best</span>}</div>"}, {"index": 9, "class": "opinion_statement", "text": "Depressing movie", "color": "#C8E6C9", "startPos": 1253, "endPos": 1269, "beforeText": "r read the book. Maybe that&#x27;s why I really enjoyed the movie. It&#x27;s maybe the best Russian movie\nI saw in the last several years.\nHelpful\n23\n13\n\u2022\n9/10\n", "extractionText": "Depressing movie", "afterText": "\nGot me hooked and depressed at the same time. Over all it&#x27;s a good movie.\nHelpful\n5\n1\n\u2022\n1/10\nTolerating corruption\nSpoiler\nHelpful\n18\n50\n\u2022\n10/10\nWell", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">The movie</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Negative</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">Depressing</span>}</div>"}, {"index": 10, "class": "audience_impact", "text": "Got me hooked and depressed at the same time", "color": "#D2E3FC", "startPos": 1270, "endPos": 1314, "beforeText": "Maybe that&#x27;s why I really enjoyed the movie. It&#x27;s maybe the best Russian movie\nI saw in the last several years.\nHelpful\n23\n13\n\u2022\n9/10\nDepressing movie\n", "extractionText": "Got me hooked and depressed at the same time", "afterText": ". Over all it&#x27;s a good movie.\nHelpful\n5\n1\n\u2022\n1/10\nTolerating corruption\nSpoiler\nHelpful\n18\n50\n\u2022\n10/10\nWell done!\nWell done guys u did a good work. At l", "attributesHtml": "<div><strong>class:</strong> audience_impact</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">emotion_evoked</span>: <span class=\"lx-attr-value\">hooked, depressed</span>, <span class=\"lx-attr-key\">causal_element</span>: <span class=\"lx-attr-value\">The movie</span>, <span class=\"lx-attr-key\">target_audience</span>: <span class=\"lx-attr-value\">the reviewer</span>}</div>"}, {"index": 11, "class": "opinion_statement", "text": "it's a good movie", "color": "#C8E6C9", "startPos": 1325, "endPos": 1342, "beforeText": " the best Russian movie\nI saw in the last several years.\nHelpful\n23\n13\n\u2022\n9/10\nDepressing movie\nGot me hooked and depressed at the same time. Over all ", "extractionText": "it&#x27;s a good movie", "afterText": ".\nHelpful\n5\n1\n\u2022\n1/10\nTolerating corruption\nSpoiler\nHelpful\n18\n50\n\u2022\n10/10\nWell done!\nWell done guys u did a good work. At last i have no shame for movi", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">The movie</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Positive</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">good</span>}</div>"}, {"index": 12, "class": "opinion_statement", "text": "Tolerating corruption", "color": "#C8E6C9", "startPos": 1363, "endPos": 1384, "beforeText": "ast several years.\nHelpful\n23\n13\n\u2022\n9/10\nDepressing movie\nGot me hooked and depressed at the same time. Over all it&#x27;s a good movie.\nHelpful\n5\n1\n\u2022\n1/10\n", "extractionText": "Tolerating corruption", "afterText": "\nSpoiler\nHelpful\n18\n50\n\u2022\n10/10\nWell done!\nWell done guys u did a good work. At last i have no shame for movie from my country. Thank you,\nwas watching", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">The movie</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Negative</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">Tolerating corruption</span>}</div>"}, {"index": 13, "class": "opinion_statement", "text": "Well done guys u did a good work", "color": "#C8E6C9", "startPos": 1426, "endPos": 1458, "beforeText": " hooked and depressed at the same time. Over all it&#x27;s a good movie.\nHelpful\n5\n1\n\u2022\n1/10\nTolerating corruption\nSpoiler\nHelpful\n18\n50\n\u2022\n10/10\nWell done!\n", "extractionText": "Well done guys u did a good work", "afterText": ". At last i have no shame for movie from my country. Thank you,\nwas watching in one breath.\nHelpful\n20\n14\n\u2022\n4/10\nThe first two opening sequences are e", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">The filmmakers</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Positive</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">Well done good work</span>}</div>"}, {"index": 14, "class": "opinion_statement", "text": "At last i have no shame for movie from my country", "color": "#C8E6C9", "startPos": 1460, "endPos": 1509, "beforeText": "time. Over all it&#x27;s a good movie.\nHelpful\n5\n1\n\u2022\n1/10\nTolerating corruption\nSpoiler\nHelpful\n18\n50\n\u2022\n10/10\nWell done!\nWell done guys u did a good work. ", "extractionText": "At last i have no shame for movie from my country", "afterText": ". Thank you,\nwas watching in one breath.\nHelpful\n20\n14\n\u2022\n4/10\nThe first two opening sequences are enough to watch to get a representation of\nthe medio", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">Movie from my country</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Positive</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">no shame</span>}</div>"}, {"index": 15, "class": "audience_impact", "text": "was watching in one breath", "color": "#D2E3FC", "startPos": 1522, "endPos": 1548, "beforeText": "g corruption\nSpoiler\nHelpful\n18\n50\n\u2022\n10/10\nWell done!\nWell done guys u did a good work. At last i have no shame for movie from my country. Thank you,\n", "extractionText": "was watching in one breath", "afterText": ".\nHelpful\n20\n14\n\u2022\n4/10\nThe first two opening sequences are enough to watch to get a representation of\nthe mediocrity of a movie.\nThe first two opening", "attributesHtml": "<div><strong>class:</strong> audience_impact</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">emotion_evoked</span>: <span class=\"lx-attr-value\">captivated, engaged</span>, <span class=\"lx-attr-key\">causal_element</span>: <span class=\"lx-attr-value\">The movie</span>, <span class=\"lx-attr-key\">target_audience</span>: <span class=\"lx-attr-value\">the reviewer</span>}</div>"}, {"index": 16, "class": "opinion_statement", "text": "the mediocrity of a movie", "color": "#C8E6C9", "startPos": 1650, "endPos": 1675, "beforeText": "y country. Thank you,\nwas watching in one breath.\nHelpful\n20\n14\n\u2022\n4/10\nThe first two opening sequences are enough to watch to get a representation of\n", "extractionText": "the mediocrity of a movie", "afterText": ".\nThe first two opening sequences are enough to watch to get a representation of the mediocrity of a\nmovie. You can smell rotten fish from the first m", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">The movie</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Negative</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">mediocrity</span>}</div>"}, {"index": 17, "class": "opinion_statement", "text": "You can smell rotten fish from the first minutes", "color": "#C8E6C9", "startPos": 1783, "endPos": 1831, "beforeText": "epresentation of\nthe mediocrity of a movie.\nThe first two opening sequences are enough to watch to get a representation of the mediocrity of a\nmovie. ", "extractionText": "You can smell rotten fish from the first minutes", "afterText": ".\nA leading actor Sasha Petrov is thirty years old and looks thirty-five, so when he is represented to us\nas a young student it is simply implausible.", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">The movie</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Negative</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">smell rotten fish</span>}</div>"}, {"index": 18, "class": "opinion_statement", "text": "A leading actor Sasha Petrov is thirty years old and looks thirty-five, so when he is represented to us as a young student it is simply implausible", "color": "#C8E6C9", "startPos": 1833, "endPos": 1980, "beforeText": "rst two opening sequences are enough to watch to get a representation of the mediocrity of a\nmovie. You can smell rotten fish from the first minutes.\n", "extractionText": "A leading actor Sasha Petrov is thirty years old and looks thirty-five, so when he is represented to us\nas a young student it is simply implausible", "afterText": ". &quot;A junkhead who deals drugs living with his mom&quot; that I\nwould believe. And it&#x27;s just the start.\nThe lack of decent introduction of an antagonist pla", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">The casting of Sasha Petrov</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Negative</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">simply implausible</span>}</div>"}, {"index": 19, "class": "opinion_statement", "text": "lack of decent introduction of an antagonist", "color": "#C8E6C9", "startPos": 2082, "endPos": 2126, "beforeText": "o us\nas a young student it is simply implausible. &quot;A junkhead who deals drugs living with his mom&quot; that I\nwould believe. And it&#x27;s just the start.\nThe ", "extractionText": "lack of decent introduction of an antagonist", "afterText": " played by another nohow actor Ivan Yankovsky\nleaves the same feeling of being tricked. The whole &quot;night club sequence&quot; looks both poorly acted\nand ov", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">The introduction of an antagonist</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Negative</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">lack of decent introduction</span>}</div>"}, {"index": 20, "class": "opinion_statement", "text": "leaves the same feeling of being tricked", "color": "#C8E6C9", "startPos": 2172, "endPos": 2212, "beforeText": "his mom&quot; that I\nwould believe. And it&#x27;s just the start.\nThe lack of decent introduction of an antagonist played by another nohow actor Ivan Yankovsky\n", "extractionText": "leaves the same feeling of being tricked", "afterText": ". The whole &quot;night club sequence&quot; looks both poorly acted\nand overplayed (depends on what actor you are looking at). Yes, it may happen in an up to th", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">The introduction of an antagonist</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Negative</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">feeling of being tricked</span>}</div>"}, {"index": 21, "class": "opinion_statement", "text": "looks both poorly acted and overplayed", "color": "#C8E6C9", "startPos": 2246, "endPos": 2284, "beforeText": " introduction of an antagonist played by another nohow actor Ivan Yankovsky\nleaves the same feeling of being tricked. The whole &quot;night club sequence&quot; ", "extractionText": "looks both poorly acted\nand overplayed", "afterText": " (depends on what actor you are looking at). Yes, it may happen in an up to the neck\nHelpful\n16\n49\n\u2022\n10/10\nOne if the best dramas\nAn emotional film, a", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">The whole &quot;night club sequence&quot;</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Negative</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">poorly acted and overplayed</span>}</div>"}, {"index": 22, "class": "opinion_statement", "text": "One if the best dramas", "color": "#C8E6C9", "startPos": 2391, "endPos": 2413, "beforeText": "nce&quot; looks both poorly acted\nand overplayed (depends on what actor you are looking at). Yes, it may happen in an up to the neck\nHelpful\n16\n49\n\u2022\n10/10\n", "extractionText": "One if the best dramas", "afterText": "\nAn emotional film, a great character.. One of those rare rare movies you really want to see how it\nturns out for the boy. Something Western cinematog", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">dramas</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Positive</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">best dramas</span>}</div>"}, {"index": 23, "class": "opinion_statement", "text": "An emotional film", "color": "#C8E6C9", "startPos": 2414, "endPos": 2431, "beforeText": "acted\nand overplayed (depends on what actor you are looking at). Yes, it may happen in an up to the neck\nHelpful\n16\n49\n\u2022\n10/10\nOne if the best dramas\n", "extractionText": "An emotional film", "afterText": ", a great character.. One of those rare rare movies you really want to see how it\nturns out for the boy. Something Western cinematography cannot do an", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">The film</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Positive</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">emotional</span>}</div>"}, {"index": 24, "class": "opinion_statement", "text": "a great character", "color": "#C8E6C9", "startPos": 2433, "endPos": 2450, "beforeText": "d (depends on what actor you are looking at). Yes, it may happen in an up to the neck\nHelpful\n16\n49\n\u2022\n10/10\nOne if the best dramas\nAn emotional film, ", "extractionText": "a great character", "afterText": ".. One of those rare rare movies you really want to see how it\nturns out for the boy. Something Western cinematography cannot do anymore.\nHelpful\n6\n6\n", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">character</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Positive</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">great</span>}</div>"}, {"index": 25, "class": "opinion_statement", "text": "One of those rare rare movies you really want to see how it turns out for the boy", "color": "#C8E6C9", "startPos": 2453, "endPos": 2534, "beforeText": "ctor you are looking at). Yes, it may happen in an up to the neck\nHelpful\n16\n49\n\u2022\n10/10\nOne if the best dramas\nAn emotional film, a great character.. ", "extractionText": "One of those rare rare movies you really want to see how it\nturns out for the boy", "afterText": ". Something Western cinematography cannot do anymore.\nHelpful\n6\n6\n\u2022\n10/10\nGreat storytelling, cinematography and acting\nLoved this movie as it keeps y", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">movies</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Positive</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">rare rare movies you really want to see how it turns out for the boy</span>}</div>"}, {"index": 26, "class": "opinion_statement", "text": "Great storytelling, cinematography and acting", "color": "#C8E6C9", "startPos": 2608, "endPos": 2653, "beforeText": "f those rare rare movies you really want to see how it\nturns out for the boy. Something Western cinematography cannot do anymore.\nHelpful\n6\n6\n\u2022\n10/10\n", "extractionText": "Great storytelling, cinematography and acting", "afterText": "\nLoved this movie as it keeps you guessing how the movie would unfold at the end. The moral of the\nstory and the plot unwinding from a simple beginnin", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">storytelling, cinematography and acting</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Positive</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">Great</span>}</div>"}, {"index": 27, "class": "opinion_statement", "text": "keeps you guessing how the movie would unfold at the end", "color": "#C8E6C9", "startPos": 2677, "endPos": 2733, "beforeText": "the boy. Something Western cinematography cannot do anymore.\nHelpful\n6\n6\n\u2022\n10/10\nGreat storytelling, cinematography and acting\nLoved this movie as it ", "extractionText": "keeps you guessing how the movie would unfold at the end", "afterText": ". The moral of the\nstory and the plot unwinding from a simple beginning is superb. Well crafted and tense from\nbeginning to end. This is a movie to wa", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">The movie</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Positive</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">keeps you guessing how the movie would unfold at the end</span>}</div>"}, {"index": 28, "class": "opinion_statement", "text": "The moral of the story and the plot unwinding from a simple beginning is superb", "color": "#C8E6C9", "startPos": 2735, "endPos": 2814, "beforeText": "e.\nHelpful\n6\n6\n\u2022\n10/10\nGreat storytelling, cinematography and acting\nLoved this movie as it keeps you guessing how the movie would unfold at the end. ", "extractionText": "The moral of the\nstory and the plot unwinding from a simple beginning is superb", "afterText": ". Well crafted and tense from\nbeginning to end. This is a movie to watch if you like Gone Baby Gone and Drive\nRussian action movie at its best !\nWill ", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">The moral of the story and the plot unwinding</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Positive</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">superb</span>}</div>"}, {"index": 29, "class": "opinion_statement", "text": "Well crafted and tense from beginning to end", "color": "#C8E6C9", "startPos": 2816, "endPos": 2860, "beforeText": "ovie as it keeps you guessing how the movie would unfold at the end. The moral of the\nstory and the plot unwinding from a simple beginning is superb. ", "extractionText": "Well crafted and tense from\nbeginning to end", "afterText": ". This is a movie to watch if you like Gone Baby Gone and Drive\nRussian action movie at its best !\nWill keep you glued to your seats.\nHelpful\n2\n1\n\u2022\n9/", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">The movie</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Positive</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">Well crafted and tense</span>}</div>"}, {"index": 30, "class": "opinion_statement", "text": "Russian action movie at its best !", "color": "#C8E6C9", "startPos": 2924, "endPos": 2958, "beforeText": "inding from a simple beginning is superb. Well crafted and tense from\nbeginning to end. This is a movie to watch if you like Gone Baby Gone and Drive\n", "extractionText": "Russian action movie at its best !", "afterText": "\nWill keep you glued to your seats.\nHelpful\n2\n1\n\u2022\n9/10\nIntense, depressing and bleak, but amazing\nWhat an amazing movie. Intense, bleak and very sad. ", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">Russian action movie</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Positive</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">at its best</span>}</div>"}, {"index": 31, "class": "audience_impact", "text": "Will keep you glued to your seats", "color": "#D2E3FC", "startPos": 2959, "endPos": 2992, "beforeText": "uperb. Well crafted and tense from\nbeginning to end. This is a movie to watch if you like Gone Baby Gone and Drive\nRussian action movie at its best !\n", "extractionText": "Will keep you glued to your seats", "afterText": ".\nHelpful\n2\n1\n\u2022\n9/10\nIntense, depressing and bleak, but amazing\nWhat an amazing movie. Intense, bleak and very sad. Definitely not a movie for everyon", "attributesHtml": "<div><strong>class:</strong> audience_impact</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">emotion_evoked</span>: <span class=\"lx-attr-value\">glued, engaged</span>, <span class=\"lx-attr-key\">causal_element</span>: <span class=\"lx-attr-value\">The movie</span>, <span class=\"lx-attr-key\">target_audience</span>: <span class=\"lx-attr-value\">you</span>}</div>"}, {"index": 32, "class": "opinion_statement", "text": "amazing movie", "color": "#C8E6C9", "startPos": 3064, "endPos": 3077, "beforeText": "and Drive\nRussian action movie at its best !\nWill keep you glued to your seats.\nHelpful\n2\n1\n\u2022\n9/10\nIntense, depressing and bleak, but amazing\nWhat an ", "extractionText": "amazing movie", "afterText": ". Intense, bleak and very sad. Definitely not a movie for everyone. Leaves you\nthinking about a lot of things\n9/10.\nHelpful\n1\n2\n\u2022\n10/10\nVery nice movi", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">movie</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Positive</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">amazing</span>}</div>"}, {"index": 33, "class": "opinion_statement", "text": "Intense, bleak and very sad", "color": "#C8E6C9", "startPos": 3079, "endPos": 3106, "beforeText": "an action movie at its best !\nWill keep you glued to your seats.\nHelpful\n2\n1\n\u2022\n9/10\nIntense, depressing and bleak, but amazing\nWhat an amazing movie. ", "extractionText": "Intense, bleak and very sad", "afterText": ". Definitely not a movie for everyone. Leaves you\nthinking about a lot of things\n9/10.\nHelpful\n1\n2\n\u2022\n10/10\nVery nice movie\nThe storyline unfolds with ", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">The movie</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Negative</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">Intense, bleak and very sad</span>}</div>"}, {"index": 34, "class": "opinion_statement", "text": "Definitely not a movie for everyone", "color": "#C8E6C9", "startPos": 3108, "endPos": 3143, "beforeText": "\nWill keep you glued to your seats.\nHelpful\n2\n1\n\u2022\n9/10\nIntense, depressing and bleak, but amazing\nWhat an amazing movie. Intense, bleak and very sad. ", "extractionText": "Definitely not a movie for everyone", "afterText": ". Leaves you\nthinking about a lot of things\n9/10.\nHelpful\n1\n2\n\u2022\n10/10\nVery nice movie\nThe storyline unfolds with a captivating blend of mystery and dr", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">movie</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Negative</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">not a movie for everyone</span>}</div>"}, {"index": 35, "class": "opinion_statement", "text": "Leaves you thinking about a lot of things", "color": "#C8E6C9", "startPos": 3145, "endPos": 3186, "beforeText": "elpful\n2\n1\n\u2022\n9/10\nIntense, depressing and bleak, but amazing\nWhat an amazing movie. Intense, bleak and very sad. Definitely not a movie for everyone. ", "extractionText": "Leaves you\nthinking about a lot of things", "afterText": "\n9/10.\nHelpful\n1\n2\n\u2022\n10/10\nVery nice movie\nThe storyline unfolds with a captivating blend of mystery and drama, introducing us to a world filled\nwith ", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">The movie</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Neutral</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">Leaves you thinking about a lot of things</span>}</div>"}, {"index": 36, "class": "opinion_statement", "text": "Very nice movie", "color": "#C8E6C9", "startPos": 3213, "endPos": 3228, "beforeText": " amazing movie. Intense, bleak and very sad. Definitely not a movie for everyone. Leaves you\nthinking about a lot of things\n9/10.\nHelpful\n1\n2\n\u2022\n10/10\n", "extractionText": "Very nice movie", "afterText": "\nThe storyline unfolds with a captivating blend of mystery and drama, introducing us to a world filled\nwith complex characters and unforeseen twists. ", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">movie</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Positive</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">Very nice</span>}</div>"}, {"index": 37, "class": "opinion_statement", "text": "The storyline unfolds with a captivating blend of mystery and drama", "color": "#C8E6C9", "startPos": 3229, "endPos": 3296, "beforeText": "Intense, bleak and very sad. Definitely not a movie for everyone. Leaves you\nthinking about a lot of things\n9/10.\nHelpful\n1\n2\n\u2022\n10/10\nVery nice movie\n", "extractionText": "The storyline unfolds with a captivating blend of mystery and drama", "afterText": ", introducing us to a world filled\nwith complex characters and unforeseen twists. Without divulging spoilers, the movie&#x27;s plot\nmasterfully weaves toge", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">The storyline</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Positive</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">captivating blend of mystery and drama</span>}</div>"}, {"index": 38, "class": "opinion_statement", "text": "movie's plot masterfully weaves together various elements, creating a tapestry of suspense that keeps the audience guessing until the final scenes", "color": "#C8E6C9", "startPos": 3410, "endPos": 3556, "beforeText": "ptivating blend of mystery and drama, introducing us to a world filled\nwith complex characters and unforeseen twists. Without divulging spoilers, the ", "extractionText": "movie&#x27;s plot\nmasterfully weaves together various elements, creating a tapestry of suspense that keeps the\naudience guessing until the final scenes", "afterText": ".\nThe cast delivers commendable performances, breathing life into their respective roles. Standout\nacting and on-screen chemistry contribute significa", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">movie&#x27;s plot</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Positive</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">masterfully weaves together various elements, creating a tapestry of suspense</span>}</div>"}, {"index": 39, "class": "audience_impact", "text": "keeps the audience guessing until the final scenes", "color": "#D2E3FC", "startPos": 3506, "endPos": 3556, "beforeText": "nd unforeseen twists. Without divulging spoilers, the movie&#x27;s plot\nmasterfully weaves together various elements, creating a tapestry of suspense that ", "extractionText": "keeps the\naudience guessing until the final scenes", "afterText": ".\nThe cast delivers commendable performances, breathing life into their respective roles. Standout\nacting and on-screen chemistry contribute significa", "attributesHtml": "<div><strong>class:</strong> audience_impact</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">emotion_evoked</span>: <span class=\"lx-attr-value\">guessing, suspenseful</span>, <span class=\"lx-attr-key\">causal_element</span>: <span class=\"lx-attr-value\">movie&#x27;s plot</span>, <span class=\"lx-attr-key\">target_audience</span>: <span class=\"lx-attr-value\">the audience</span>}</div>"}, {"index": 40, "class": "opinion_statement", "text": "commendable performances", "color": "#C8E6C9", "startPos": 3576, "endPos": 3600, "beforeText": "terfully weaves together various elements, creating a tapestry of suspense that keeps the\naudience guessing until the final scenes.\nThe cast delivers ", "extractionText": "commendable performances", "afterText": ", breathing life into their respective roles. Standout\nacting and on-screen chemistry contribute significantly to the movie&#x27;s success. Each character&#x27;", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">The cast</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Positive</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">commendable performances</span>}</div>"}, {"index": 41, "class": "opinion_statement", "text": "Standout acting and on-screen chemistry contribute significantly to the movie's success", "color": "#C8E6C9", "startPos": 3646, "endPos": 3733, "beforeText": "ense that keeps the\naudience guessing until the final scenes.\nThe cast delivers commendable performances, breathing life into their respective roles. ", "extractionText": "Standout\nacting and on-screen chemistry contribute significantly to the movie&#x27;s success", "afterText": ". Each character&#x27;s\nportrayal adds depth to the narrative, creating a compelling and immersive viewing experience.\nThe film&#x27;s visual allure is evident ", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">acting and on-screen chemistry</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Positive</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">Standout acting and on-screen chemistry contribute significantly</span>}</div>"}, {"index": 42, "class": "opinion_statement", "text": "Each character's portrayal adds depth to the narrative, creating a compelling and immersive viewing experience", "color": "#C8E6C9", "startPos": 3735, "endPos": 3845, "beforeText": "le performances, breathing life into their respective roles. Standout\nacting and on-screen chemistry contribute significantly to the movie&#x27;s success. ", "extractionText": "Each character&#x27;s\nportrayal adds depth to the narrative, creating a compelling and immersive viewing experience", "afterText": ".\nThe film&#x27;s visual allure is evident through its impeccable cinematography and striking visual effects.\nHelpful\n0\n0\n\u2022\nMore from this title\nMore to ex", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">Each character&#x27;s portrayal</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Positive</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">adds depth to the narrative, creating a compelling and immersive viewing experience</span>}</div>"}, {"index": 43, "class": "opinion_statement", "text": "impeccable cinematography and striking visual effects", "color": "#C8E6C9", "startPos": 3895, "endPos": 3948, "beforeText": "cter&#x27;s\nportrayal adds depth to the narrative, creating a compelling and immersive viewing experience.\nThe film&#x27;s visual allure is evident through its ", "extractionText": "impeccable cinematography and striking visual effects", "afterText": ".\nHelpful\n0\n0\n\u2022\nMore from this title\nMore to explore\nStaff Picks: What to Watch in November\nSee our picks\nFantastical Physical Transformations\nSee the", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">The film&#x27;s visual allure</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Positive</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">impeccable cinematography and striking visual effects</span>}</div>"}];
+        let currentIndex = 0;
+        let isPlaying = false;
+        let animationInterval = null;
+        let animationSpeed = 1.0;
+
+        function updateDisplay() {
+          const extraction = extractions[currentIndex];
+          if (!extraction) return;
+
+          document.getElementById('attributesContainer').innerHTML = extraction.attributesHtml;
+          document.getElementById('entityInfo').textContent = (currentIndex + 1) + '/' + extractions.length;
+          document.getElementById('posInfo').textContent = '[' + extraction.startPos + '-' + extraction.endPos + ']';
+          document.getElementById('progressSlider').value = currentIndex;
+
+          const playBtn = document.querySelector('.lx-control-btn');
+          if (playBtn) playBtn.textContent = isPlaying ? '⏸ Pause' : '▶️ Play';
+
+          const prevHighlight = document.querySelector('.lx-text-window .lx-current-highlight');
+          if (prevHighlight) prevHighlight.classList.remove('lx-current-highlight');
+          const currentSpan = document.querySelector('.lx-text-window span[data-idx="' + currentIndex + '"]');
+          if (currentSpan) {
+            currentSpan.classList.add('lx-current-highlight');
+            currentSpan.scrollIntoView({block: 'center', behavior: 'smooth'});
+          }
+        }
+
+        function nextExtraction() {
+          currentIndex = (currentIndex + 1) % extractions.length;
+          updateDisplay();
+        }
+
+        function prevExtraction() {
+          currentIndex = (currentIndex - 1 + extractions.length) % extractions.length;
+          updateDisplay();
+        }
+
+        function jumpToExtraction(index) {
+          currentIndex = parseInt(index);
+          updateDisplay();
+        }
+
+        function playPause() {
+          if (isPlaying) {
+            clearInterval(animationInterval);
+            isPlaying = false;
+          } else {
+            animationInterval = setInterval(nextExtraction, animationSpeed * 1000);
+            isPlaying = true;
+          }
+          updateDisplay();
+        }
+
+        window.playPause = playPause;
+        window.nextExtraction = nextExtraction;
+        window.prevExtraction = prevExtraction;
+        window.jumpToExtraction = jumpToExtraction;
+
+        updateDisplay();
+      })();
+    </script>
